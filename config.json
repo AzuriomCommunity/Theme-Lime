@@ -1,0 +1,18 @@
+{
+    "subtitle": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget turpis pulvinar, efficitur dui sit amet, vestibulum quam. ",
+    "footer_description": "Parturient montes nascetur ridiculus mus mauris vitae ultricies. A lacus vestibulum sed arcu non. Facilisi etiam dignissim diam quis.\u2029",
+    "footer_links": [
+        {
+            "name": "Link 1",
+            "value": "https://azuriom.com"
+        },
+        {
+            "name": "Link 2",
+            "value": "https://azuriom.com"
+        },
+        {
+            "name": "Link 3",
+            "value": "https://azuriom.com"
+        }
+    ]
+}
