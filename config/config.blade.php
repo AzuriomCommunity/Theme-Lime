@@ -70,10 +70,9 @@
                     @enderror
                 </div>
 
-                <label>{{ trans('theme::theme.config.footer_links') }}</label>
+                <label class="form-label">{{ trans('theme::theme.config.footer_links') }}</label>
 
                 <div id="links">
-
                     @foreach(theme_config('footer_links') ?? [] as $link)
                         <div class="row g-3">
                             <div class="mb-3 col-md-6">

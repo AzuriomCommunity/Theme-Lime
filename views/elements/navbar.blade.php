@@ -46,8 +46,8 @@
                 @else
                     @include('elements.notifications')
 
-                    <li class="nav-item dropdown">
-                        <a id="userDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                    <div class="nav-item dropdown">
+                        <a id="userDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             {{ Auth::user()->name }} <span class="caret"></span>
                         </a>
 
@@ -76,7 +76,7 @@
                                 @csrf
                             </form>
                         </div>
-                    </li>
+                    </div>
                 @endguest
             </div>
         </div>
