@@ -44,7 +44,7 @@ a:hover {
 }
 
 .text-primary {
-    color: #78FFC5!important;
+    color: #78FFC5 !important;
 }
 
 .page-container {
@@ -163,6 +163,11 @@ table tbody td {
 
 .breadcrumb {
     background-color: #36445A;
+}
+
+.CodeMirror {
+    color: #fff;
+    background-color: #36445A !important;
 }
 
 .editor-toolbar i {
@@ -310,43 +315,27 @@ table tbody td {
     color: #78FFC5;
 }
 
-textarea {
+.form-check-input {
+    border: none;
+}
+
+.form-control,
+.form-select {
     background-color: #36445A !important;
     border: 2px solid #78FFC5 !important;
     color: #F4F4F8 !important;
     outline: 0 !important;
 }
 
-textarea:focus {
+.form-control:focus,
+.form-select {
     background-color: #36445A !important;
     color: #F4F4F8 !important;
     border-color: #78FFC5 !important;
 }
 
-input {
-    background-color: #36445A !important;
-    border: 2px solid #78FFC5 !important;
-    color: #F4F4F8 !important;
-    outline: 0 !important;
-}
-
-input:focus {
-    background-color: #36445A !important;
-    color: #F4F4F8 !important;
-    border-color: #78FFC5 !important;
-}
-
-select {
-    background-color: #36445A !important;
-    border: 2px solid #78FFC5 !important;
-    color: #F4F4F8 !important;
-    outline: 0 !important;
-}
-
-select:focus {
-    background-color: #36445A !important;
-    color: #F4F4F8 !important;
-    border-color: #78FFC5 !important;
+.form-check-input:checked {
+    background-color: #78FFC5 !important;
 }
 
 .btn-success, .btn-primary, .btn-secondary, .btn-warning, .btn-info, .btn-danger {
