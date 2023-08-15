@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark text-uppercase">
+<nav class="navbar navbar-expand-md z-3">
     <div class="container">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="{{ trans('messages.nav.toggle') }}">
             <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
                             {{ trans('auth.register') }}
                         </a>
                     @endif
-                    <a class="btn btn-secondary mx-1 my-2" href="{{ route('login') }}">
+                    <a class="btn btn-primary mx-1 my-2" href="{{ route('login') }}">
                         {{ trans('auth.login') }}
                     </a>
                 @else

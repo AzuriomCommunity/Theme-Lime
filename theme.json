@@ -2,12 +2,12 @@
     "id": "lime",
     "name": "Lime",
     "description": "Lime is a modern light theme for Azuriom",
-    "version": "1.1.2",
+    "version": "1.2.0",
     "url": "https://market.azuriom.com/resources/29",
     "authors": [
-        "Captain34",
-        "MrMicky"
+        "MrMicky",
+        "Captain34"
     ],
-    "azuriom_api": "1.0.0",
+    "azuriom_api": "1.1.0",
     "apiId": 29
 }

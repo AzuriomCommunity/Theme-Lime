@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="@yield('description', setting('description', ''))">
-    <meta name="theme-color" content="#3490DC">
+    <meta name="theme-color" content="#78ffc5">
     <meta name="author" content="Azuriom">
 
     <meta property="og:title" content="@yield('title')">
@@ -37,21 +37,23 @@
 
     <!-- Styles -->
     <link href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/base.css') }}" rel="stylesheet">
     <link href="{{ theme_asset('css/style.css') }}" rel="stylesheet">
     @stack('styles')
+    @include('elements.theme-color', ['color' => '#78ffc5'])
 </head>
 
-<body>
+<body data-bs-theme="dark">
 <div id="app" @if(Route::is('home')) class="lime-home" @endif>
     @yield('app')
 </div>
 
 <footer class="footer">
-    <div class="top-footer">
+    <div class="top-footer position-relative bg-body-secondary py-5">
         <div class="container">
             <div class="row gy-3">
                 <div class="col-md-4 about">
-                    <h3>{{ site_name() }}</h3>
+                    <h3 class="text-center">{{ site_name() }}</h3>
                     <p>{{ theme_config('footer_description') }}</p>
                 </div>
                 <div class="col-md-4 list-inline text-center social-links pt-3">
@@ -62,7 +64,9 @@
                     @endforeach
                 </div>
                 <div class="col-md-4 links">
-                    <h3>{{ trans('theme::theme.footer_links_title') }}</h3>
+                    <h3 class="text-center">
+                        {{ trans('theme::theme.footer_links_title') }}
+                    </h3>
 
                     <ul class="list-unstyled text-center">
                         @foreach(theme_config('footer_links') ?? [] as $link)
@@ -76,15 +80,10 @@
         </div>
     </div>
 
-    <div class="copyright">
+    <div class="copyright bg-body-tertiary py-3">
         <div class="container text-center">
             <p class="mb-1">{{ setting('copyright') }}</p>
             <p class="small mb-0">
-                Designed with <i style="color: orangered;" class="bi bi-heart"></i> by
-                <a href="https://twitter.com/Captain34_dev" target="_blank">
-                    Captain34
-                </a>
-                -
                 @lang('messages.copyright')
             </p>
         </div>
